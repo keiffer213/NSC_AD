@@ -2,6 +2,7 @@
   "name": "practicum-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://keiffer213.github.io/SeattleColleges.github.io/",
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@testing-library/jest-dom": "^5.17.0",
@@ -10,6 +11,7 @@
     "crypto": "^1.0.1",
     "emailjs": "^4.0.3",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.1.1",
     "net": "^1.0.2",
     "os": "^0.1.2",
     "react": "^18.3.0",
@@ -27,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
